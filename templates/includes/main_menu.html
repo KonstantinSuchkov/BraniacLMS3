@@ -23,6 +23,9 @@
           <a class="nav-link" href="{% url 'mainapp:courses' %}">Курсы</a>
         </li>
         {% if user.is_authenticated %}
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'authapp:profile_edit' user.pk %}">{{ user.first_name|default:user.username}}</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="ddProfile"
             role="button" data-toggle="dropdown" aria-haspopup="true"
