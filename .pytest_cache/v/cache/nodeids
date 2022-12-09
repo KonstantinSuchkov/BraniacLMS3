@@ -1,0 +1,16 @@
+[
+  "mainapp/tests.py::TestCoursesWithMock::test_page_open_detail",
+  "mainapp/tests.py::TestNewsPage::test_create_in_web",
+  "mainapp/tests.py::TestNewsPage::test_delete_deny_access",
+  "mainapp/tests.py::TestNewsPage::test_delete_in_web",
+  "mainapp/tests.py::TestNewsPage::test_page_open_crete_by_admin",
+  "mainapp/tests.py::TestNewsPage::test_page_open_crete_deny_access",
+  "mainapp/tests.py::TestNewsPage::test_page_open_detail",
+  "mainapp/tests.py::TestNewsPage::test_page_open_list",
+  "mainapp/tests.py::TestNewsPage::test_page_open_update_by_admin",
+  "mainapp/tests.py::TestNewsPage::test_page_open_update_deny_access",
+  "mainapp/tests.py::TestNewsPage::test_update_in_web",
+  "mainapp/tests.py::TestNewsSelenium::test_create_button_clickable",
+  "mainapp/tests.py::TestNewsSelenium::test_pick_color",
+  "mainapp/tests.py::TestTaskMailSend::test_mail_send"
+]

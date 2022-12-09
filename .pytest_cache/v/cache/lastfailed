@@ -1,0 +1,4 @@
+{
+  "mainapp/tests.py::TestCoursesWithMock::test_page_open_detail": true,
+  "mainapp/tests.py::TestNewsSelenium::test_pick_color": true
+}
