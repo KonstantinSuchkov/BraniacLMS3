@@ -87,13 +87,17 @@ TEMPLATES = [
 
 AUTHENTICATION_BACKENDS = (
     "social_core.backends.github.GithubOAuth2",
+    "social_core.backends.vk.VKOAuth2",
     "django.contrib.auth.backends.ModelBackend",
 )
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-SOCIAL_AUTH_GITHUB_KEY = "b20cbf07850289eb7e70"
-SOCIAL_AUTH_GITHUB_SECRET = "09c0d98dff5b27442037d5b8243cd1f7519f349f"
+SOCIAL_AUTH_GITHUB_KEY = "2d5801a1d86336cdf96d"
+SOCIAL_AUTH_GITHUB_SECRET = "8780284bac21e9c4fa901f3757899d8481a6ff1f"
+
+SOCIAL_AUTH_VK_OAUTH2_KEY = '51501354'
+SOCIAL_AUTH_VK_OAUTH2_SECRET = 'fzrCP9RJEUHBFnX0AlcR'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
