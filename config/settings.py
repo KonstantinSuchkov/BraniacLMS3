@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-x^74@vw_(i%s-p%i@o620-uk5j67vzap37k0g$*%d*!g()_v4r"
+SECRET_KEY = "_h94+q_xj7dshrj58iyznl^ighi=qlffj!d2jncd87nzkucke1"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -87,7 +87,6 @@ TEMPLATES = [
 
 AUTHENTICATION_BACKENDS = (
     "social_core.backends.github.GithubOAuth2",
-    "social_core.backends.vk.VKOAuth2",
     "django.contrib.auth.backends.ModelBackend",
 )
 
@@ -95,9 +94,6 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 SOCIAL_AUTH_GITHUB_KEY = "2d5801a1d86336cdf96d"
 SOCIAL_AUTH_GITHUB_SECRET = "8780284bac21e9c4fa901f3757899d8481a6ff1f"
-
-SOCIAL_AUTH_VK_OAUTH2_KEY = '51501354'
-SOCIAL_AUTH_VK_OAUTH2_SECRET = 'fzrCP9RJEUHBFnX0AlcR'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -231,4 +227,5 @@ EMAIL_FILE_PATH = "var/email-messages/"
 
 LOCALE_PATHS = [BASE_DIR / "locale"]
 
-SELENIUM_DRIVER_PATH_FF = BASE_DIR / "var" / "selenium" / "msedgedriver"
+SELENIUM_DRIVER_PATH_FF = BASE_DIR / "var" / "selenium" / "geckodriver.exe"
+

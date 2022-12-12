@@ -1,0 +1,28 @@
+ksuchkov@ksuchkov-virtual-machine:~/BraniacLMS3$ locust
+[2022-12-12 13:19:50,260] ksuchkov-virtual-machine/INFO/locust.main: Starting web interface at http://0.0.0.0:8089 (accepting connections from all network interfaces)
+[2022-12-12 13:19:50,268] ksuchkov-virtual-machine/INFO/locust.main: Starting Locust 2.13.2
+[2022-12-12 13:22:06,475] ksuchkov-virtual-machine/INFO/locust.runners: Ramping to 250 users at a rate of 5.00 per second
+[2022-12-12 13:22:55,623] ksuchkov-virtual-machine/INFO/locust.runners: All users spawned: {"LoadTestingBraniacLMS": 250} (250 total users)
+KeyboardInterrupt
+2022-12-12T10:25:53Z
+[2022-12-12 13:25:53,941] ksuchkov-virtual-machine/INFO/locust.main: Shutting down (exit code 0)
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+GET      /authapp/login/                                                                 2345     0(0.00%) |   2451      82    3676   2900 |   16.11        0.00
+GET      /authapp/register/                                                              2385     0(0.00%) |   2467     112    3655   2900 |   16.38        0.00
+GET      /mainapp/                                                                       2539     0(0.00%) |   2428      95    4065   2900 |   17.44        0.00
+GET      /mainapp/courses/                                                               2499     0(0.00%) |   2391      77    3503   2900 |   17.17        0.00
+GET      /mainapp/courses/1/                                                             2446     0(0.00%) |   2485     125    3545   3000 |   16.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     12214     0(0.00%) |   2444      77    4065   2900 |   83.90        0.00
+
+Response time percentiles (approximated)
+Type     Name                                                                                  50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+GET      /authapp/login/                                                                      2900   3000   3000   3000   3100   3200   3300   3300   3400   3700   3700   2345
+GET      /authapp/register/                                                                   2900   3000   3000   3100   3100   3200   3300   3400   3500   3700   3700   2385
+GET      /mainapp/                                                                            2900   3000   3000   3100   3100   3200   3300   3400   3900   4100   4100   2539
+GET      /mainapp/courses/                                                                    2900   3000   3000   3000   3100   3200   3300   3300   3400   3500   3500   2499
+GET      /mainapp/courses/1/                                                                  3000   3000   3100   3100   3200   3200   3300   3400   3500   3500   3500   2446
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+         Aggregated                                                                           2900   3000   3000   3100   3100   3200   3300   3400   3500   3900   4100  12214
